@@ -1,6 +1,5 @@
 const Tarea = require('./task');
 
-
 class Tareas {
 
     _listado = {};
@@ -93,7 +92,17 @@ class Tareas {
             const tarea = this._listado[id];
 
             if( !tarea.completadoEn ){
-                tarea.completadoEn = new Date().toISOString;
+                let fecha_guardado = new Date().toISOString();
+                tarea.completadoEn = fecha_guardado.green;
+            }
+
+        });
+
+        this.listadoArr.forEach(tarea => {
+
+            if (!ids.includes(tarea.id)) {
+               this._listado[tarea.id].completadoEn = null;
+
             }
 
         });

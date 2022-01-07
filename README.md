@@ -1,20 +1,17 @@
 # Notas:
-Este es mi primer programa en Node
+Este es mi segundo programa en Node
 Correr el comando 
 ```
-npm install
+npm install o npm i
 ```
- o 
- ```
- npm i
- 
- ```
-  para recrear los paquetes node
-```
+para recrear los paquetes node
+
 Esta aplicacion es de consola.
 
 Dedicada a realizar Tareas(tasks);
-Se pueden:
+Se puede:
+
+```
 
   1. Crear Tarea
   2. Listar Tareas
@@ -24,6 +21,12 @@ Se pueden:
   6. Borrar Tareas
 
 ```
-se utilizo el recurso inquirer para el manejo del promp,
-el recurso fs para la creacion, lectura y escritura de 
-informacion en un archivo json
+se utilizaron los recursos:
+```
+  Inquirer 
+  para el manejo del prompt o CLI
+
+  FS para la creacion, lectura y escritura de 
+  informacion en un archivo JSON 
+```
+
